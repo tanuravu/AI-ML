@@ -1,0 +1,106 @@
+Panda.series.string method?
+
+str.lower()
+
+import pandas as pd
+import numpy as np
+technologies= ({
+    'Courses':["SPARK","PYSPARK","HADOOP","PANDAS"],
+    'Fee' :['22000','25000','24000','26000'],
+    'Duration':['30days','50days','40days','60days'],
+    'Discount':['1000','2300','2500','1400']
+              })
+df = pd.DataFrame(technologies)
+print(df)
+
+# convert lowercase column use str.lower()
+df['Courses'] = df['Courses'].str.lower()
+print(df)
+
+# convert lowercase column use apply()
+df['Courses'] = df['Courses'].apply(str.lower)
+print(df)
+
+# Use apply() & lambda function
+df['Courses'].apply(lambda x: x.lower())
+print(df)
+
+# Convert pandas column to lowercase use map()
+df['Courses'] = df['Courses'].map(str.lower)
+print(df)
+
+====================================
+str.upper()
+======================================
+str.length()
+
+import pandas as pd
+
+data = pd.DataFrame({
+
+    'age' : [15, 17, 20, 14, 25],
+
+    'name': ["Sample", "New User", "My Name", "Jane Doe", "John Doe"]
+
+})
+
+data['name'].str.len()
+
+You'll get the following output:
+
+0    6
+
+1    8
+
+2    7
+
+3    8
+
+4    8
+
+Name: name, dtype: int64
+========================================
+str.strip()
+
+import numpy as np
+import pandas as pd
+s = pd.Series(['1. Bat.  ', '2. Dog!\n', '3. fox?\t', np.nan])
+s.str.strip()
+
+str.lstrp()
+
+str.rstrp()
+============================================
+str.split()
+
+import numpy as np
+import pandas as pd
+s = pd.Series(["this is my new pen",
+               "https://www.w3resource.com/pandas/index.php",
+               np.nan])
+s.str.split()		
+
+==============================================
+
+str.contains()
+======================================
+
+str.replace()
+====================================
+str.startswith()
+====================================
+str.endswith()
+======================================
+str.cat()
+===================================
+str.get()
+==================================
+str.slice()
+===============================
+str.find()
+===============================
+
+
+
+
+

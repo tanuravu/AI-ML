@@ -1,0 +1,28 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data=pd.read_csv("adult.csv")
+data
+========================================================================
+# Display top 10 rows
+# display last 10 rows
+# find shape of our dataset(number of rows and number of columns)
+# Getting information about our dataset like total number rows,total number of Columns,data 
+Type of Each column and memory Requirement
+# Fetch Random Samples from DataSet(50%)
+# check NULL values in dataset
+#Perform Data Cleaning(Replace '?' 
+with NaN) and plot in graph with seaborm
+ library
+#Drops all rows having missing values
+#Check for duplicate data and drop them
+#get overall Statistics about the dataFrame
+#Bivariate Analysis on graph
+#Replace Salary values ['<=50k','>50k'] with 0 and 1
+#which Workclass getting the Highest Salary?
+#how has better Chance to get Salary>50k Male or Female
+#covert workclass Columns Datatype to category Data
+
+
+===============================================================
